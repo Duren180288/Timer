@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+   android:background="@drawable/sand"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InputTimeActivity">
+
+    <TextView
+        android:id="@+id/InputTimeTextView"
+        android:layout_width="wrap_content"
+        android:textColor="@color/purple_500"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/InputTimeTextView"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/editTextTimeHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="32sp"
+        android:gravity="center"
+        android:hint="@string/hintTimeHours"
+        android:textColorHint="@color/red"
+        android:textColor="@color/purple_700"
+        android:inputType="time"
+        android:textSize="72sp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/InputTimeTextView" />
+
+
+    <EditText
+        android:id="@+id/editTextTimeMinutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16sp"
+        android:gravity="center"
+        android:hint="@string/hintTimeMinute"
+        android:textColorHint="@color/red"
+        android:textColor="@color/purple_700"
+        android:inputType="time"
+        android:textSize="72sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTimeHours" />
+
+    <android.widget.Switch
+        android:id="@+id/switchSound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="64dp"
+        android:text="@string/Sound"
+        android:textColorLink="@color/red"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonStart_Pause"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTimeMinutes" />
+
+    <Button
+        android:id="@+id/buttonStart_Pause"
+        android:onClick="start"
+        android:backgroundTint="@color/green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/buttonStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

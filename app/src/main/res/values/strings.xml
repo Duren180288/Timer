@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Timer</string>
+    <string name="InputTimeTextView">Input Time</string>
+    <string name="Sound">Sound</string>
+    <string name="buttonStart">START</string>
+    <string name="hintTimeHours">hours</string>
+    <string name="hintTimeMinute">minutes</string>
+    <string name="Warning_input">Not correct time</string>
+    <string name="buttonReset">Reset</string>
+    <string name="buttonBack"><![CDATA[<< Back to input time]]></string>
+    <string name="Start">Start</string>
+    <string name="pause">Pause</string>
+</resources>
